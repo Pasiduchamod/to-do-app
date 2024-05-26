@@ -76,3 +76,28 @@ ul li.checked{
 ul li.checked::before{
     background-image: url(Images/checked.png);
 }
+ul li span{
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    border-radius: 50%;
+    top : 5px;
+    text-align: center;
+    line-height: 40px;
+    color: #555;
+    transition: 0.7s;
+}
+ul li span:hover{
+    background: #e5e4e4;
+    color: rgb(255, 0, 0);
+}
+@media(max-width:720px){
+    .todo-app{
+        margin-top: 30%;
+    }
+    .todo-app h2{
+        font-size: 40px;
+    }
+}
